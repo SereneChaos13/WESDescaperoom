@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fourth Clue</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body class="fourth_clue">
+  <h1>Fourth Clue!<br>Too much sugar!</h1>
+
+  <div class="button_container">
+    <em><u>Instructions</u></em>
+    <br>
+    Using the Nutrition facts label, find the following information.
+    <br><br>
+    <img src=".\assets\drink_label.png"></img>
+    <br><br>
+    <input type="text" id="s1" placeholder="Sugar in grams">
+    <input type="text" id="s2" placeholder="Servings per container">
+    <input type="text" id="s3" placeholder="Gram of sugar multiplied by servings">
+    <input type="text" id="s4" placeholder="Product divided by 4">
+    <br><br>
+    <button id="submitAnswer" class="button button5">Submit Answer</button>
+  </div>
+
+  <script>
+    document.getElementById('submitAnswer').addEventListener('click', function() {
+        var m1 = document.getElementById('s1').value;
+        var m2 = document.getElementById('s2').value;
+        var m3 = document.getElementById('s3').value;
+        var m4 = document.getElementById('s4').value;
+        if (m1 === '27' && m2 === '2' && m3 === '54' && m4 === '13.5') {
+            window.location.href = 'fifth_clue.html';
+        } else {
+            alert('Incorrect answer. Try again!');
+        }
+    });
+  </script>
+
+
+</body>
+</html>

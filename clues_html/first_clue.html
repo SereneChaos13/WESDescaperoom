@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>First Clue</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body class="first_clue">
+    <h1>First Clue! <br> Not enough Fruits and Vegetables!</h1>
+
+    <div class="button_container">
+      <em><u>Instructions</u></em>
+      <br>
+      Solve the mazes. Once you do, collect the letters you find along the path. 
+      These spell out a code that you will use to advance to the next clue!
+      <br><br>
+      <input type="text" id="Maze1" placeholder="Word Maze 1 Answer">
+      <input type="text" id="Maze2" placeholder="Word Maze 2 Answer">
+      <input type="text" id="Maze3" placeholder="Word Maze 3 Answer">
+      <input type="text" id="Maze4" placeholder="Word Maze 4 Answer">
+      <br><br>
+      <button id="submitAnswer" class="button button2">Submit Answer</button>
+    </div>
+
+    <script>
+      document.getElementById('submitAnswer').addEventListener('click', function() {
+          var m1 = document.getElementById('Maze1').value;
+          var m2 = document.getElementById('Maze2').value;
+          var m3 = document.getElementById('Maze3').value;
+          var m4 = document.getElementById('Maze4').value;
+          if (m1.toLowerCase() === 'vitamins' && m2.toLowerCase() === 'vegetable' && m3.toLowerCase() === 'nutrition' && m4.toLowerCase() === 'minerals') {
+              window.location.href = 'second_clue.html';
+          } else {
+              alert('Incorrect answer. Try again!');
+          }
+      });
+    </script>
+
+</body>
+</html>

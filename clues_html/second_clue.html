@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Second Clue</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+  <body class="second_clue">
+    <h1>Second Clue! <br> Nutrition Facts Label</h1>
+
+    <div class="button_container">
+      <em><u>Instructions</u></em>
+      <br>
+      Put the jigsaw puzzle together and answer the questions below!<br>
+      Use the combination to unlock the box.
+      <br><br>
+      <input type="text" id="Lock" placeholder="Lock Combo">
+      <br><br>
+      <button id="submitAnswer" class="button button3">Submit Answer</button>
+    </div>
+
+    <script>
+      document.getElementById('submitAnswer').addEventListener('click', function() {
+          var lock = document.getElementById('Lock').value;
+          if (lock === '594') {
+              window.location.href = 'third_clue.html';
+          } else {
+              alert('Incorrect answer. Try again!');
+          }
+      });
+    </script>
+
+</body>
+</html>

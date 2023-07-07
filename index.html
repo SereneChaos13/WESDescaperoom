@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>6th Grade Escape Room</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <h1>Welcome to the Nutrition Services Virtual Escape Room!</h1>
+    <div id="info">
+      <p>Your goal is to utilize the knowledge that you have received about the biggest food mistakes, and answer the riddles as quickly as possible!</p>
+      <p>Be the first to solve all 5 riddles and your team will receive a prize!5</p>
+    </div>
+
+    <div class="button_container">
+      <button id="start" class="button button1">Click here to start!</button>
+    </div>
+
+    <script>document.getElementById('start').addEventListener('click', function() {
+      window.location.href = './clues_html/first_clue.html';
+      startTimer();
+      testt();
+      });
+    </script>
+
+</body>
+</html>

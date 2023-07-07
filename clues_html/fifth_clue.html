@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Final Clue</title>
+  <link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body class="fifth_clue">
+  <h1>Final Clue! <br>Too Much Fat!</h1>
+
+  <div class="button_container">
+    <em><u>Instructions</u></em>
+    <br>
+    Use the key to decipher the following code. It is a question, therefore once you solve it,
+    you must answer the question.
+    <br><br>
+    <input type="text" id="final" placeholder="Answer">
+    <br><br>
+    <button id="submitAnswer" class="button button6">Submit Answer</button>
+  </div>
+
+  <script>
+    document.getElementById('submitAnswer').addEventListener('click', function() {
+        var answer = document.getElementById('final').value;
+        if (answer.toLowerCase() === 'arteries' || answer.toLowerCase() === 'artery') {
+            window.location.href = 'finished.html';
+        } else {
+            alert('Incorrect answer. Try again!');
+        }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+body {
+    background-color: #485461;
+    background: linear-gradient(315deg, #485461 0%, #28313b 74%) fixed;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+/* background colors */
+.first_clue {
+    background: linear-gradient(315deg, #feae96 0%, #fe0944 85%) fixed;
+}
+
+.second_clue {
+    background-color: #08e1ae;
+    background: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%) fixed;
+}
+
+.third_clue {
+    background-color: #045de9;
+    background: linear-gradient(315deg, #045de9 0%, #09c6f9 74%) fixed;
+}
+
+.fourth_clue {
+    background-color: #f5df2e;
+    background: linear-gradient(315deg, #f5df2e 0%, #f07654 74%) fixed;
+}
+
+.fifth_clue {
+    background-color: #9921e8;
+    background: linear-gradient(315deg, #9921e8 0%, #5f72be 85%) fixed;
+}
+
+.finished {
+    background-color: #ffcfdf;
+    background: linear-gradient(315deg, #ffcfdf 0%, #b0f3f1 74%) fixed;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    text-shadow: 1px 1px 2px black;
+}
+
+#info {
+    font-size: x-large;
+    text-align: center;
+}
+
+
+.button_container {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 30px;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+/* start button */
+.button1 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #485461;
+}
+  
+.button1:hover {
+    background-color: #485461;
+    color: white;
+}
+
+/* first clues */
+.button2 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #feae96;
+}
+  
+.button2:hover {
+    background-color: #feae96;
+    color: white;
+}
+
+/* second clues */
+.button3 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #08e1ae;
+}
+  
+.button3:hover {
+    background-color: #08e1ae;
+    color: white;
+}
+
+/* third clues */
+.button4 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #045de9;
+}
+  
+.button4:hover {
+    background-color: #045de9;
+    color: white;
+}
+
+/* fourth clues */
+.button5 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #f5df2e;
+}
+  
+.button5:hover {
+    background-color: #f5df2e;
+    color: white;
+}
+
+/* final clues */
+.button6 {
+    background-color: rgba(255, 255, 255, 0); 
+    color: rgb(255, 255, 255); 
+    border: 2px solid #9921e8;
+}
+  
+.button6:hover {
+    background-color: #9921e8;
+    color: white;
+}
